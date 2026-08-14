@@ -12,32 +12,36 @@ body {
 
 header {
     text-align: center;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
-.logo {
+.LOGO{
     width: 170px;
     height: auto;
 }
+
 h1 {
     font-size: 36px;
     margin: 0;
-    color: #b18e1a;
+    color: #ab8714;
+    font-family: 'Times New Roman', serif;
 }
+
 .tagline {
     font-size: 20px;
     margin: 10px 0 0 0;
     font-style: italic;
-    color: #f7d35d;
+    color: #ebc672;
 }
 
 .owner {
     font-size: 16px;
     margin: 5px 0 0 0;
-    color: #f7d35d;
+    color: #ebc672;
 }
+
  h2 {
     font-size: 28px;
     margin: 20px 0 10px 0;
-    color: #e3d9bb;
+    color: #ab8714;
 }
