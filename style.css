@@ -49,30 +49,20 @@ h2 {
 }
 
 .book-container {
-
     display: grid;
-
     grid-template-columns: repeat(5, 1fr);
-
     gap: 20px;
-
     width: 90%;
-
     margin: auto;
 }
 
 .book {
 
     background-color: #F5F2EA;
-
     color: #1C1C1C;
-
     padding: 15px;
-
     border: 2px solid #C9A227;
-
     border-radius: 8px;
-
     text-align: center;
 }
 
@@ -81,15 +71,15 @@ h3{
     color: #6B5315;
     font-family: Georgia, serif;
     font-size: 20px;
+    font-style: italic;
 }
 
 .price {
 
     color: #9A7614;
-
     font-weight: bold;
-
     font-size: 18px;
+    font-style: italic;
 }
 
 .description {
@@ -102,12 +92,8 @@ h3{
 }
 
 .book img {
-
     width: 100%;
-
     height: 250px;
-
     object-fit: contain;
-
-    background-color: white;
+    background-color: #e6caca;
 }
