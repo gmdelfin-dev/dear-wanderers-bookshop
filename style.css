@@ -2,9 +2,7 @@ body {
     margin: 0;
     background-color: #353431;
     color: #F5F2EA;
-
     font-family: Georgia, "Times New Roman", serif;
-
     line-height: 1.5;
     font-size: 18px;
     text-align: justify; 
@@ -50,20 +48,10 @@ h2 {
 
 .book-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 80%;
     margin: auto;
-}
-
-.book {
-
-    background-color: #F5F2EA;
-    color: #1C1C1C;
-    padding: 15px;
-    border: 2px solid #C9A227;
-    border-radius: 8px;
-    text-align: center;
 }
 
 h3{
@@ -85,10 +73,9 @@ h3{
 .description {
 
     color: #5F5A50;
-
     font-family: Arial, sans-serif;
-
     font-size: 14px;
+    font-style: italic;
 }
 
 .book img {
