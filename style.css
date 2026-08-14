@@ -54,6 +54,13 @@ h2 {
     margin: auto;
 }
 
+.book {
+    background-color: #F5F2EA;;
+    padding: 20px;
+    border-radius: 2px solid #c6a024;
+    text-align: center;
+}
+
 h3{
 
     color: #6B5315;
