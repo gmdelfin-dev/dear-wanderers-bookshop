@@ -8,6 +8,8 @@ body {
     text-align: justify; 
 }
 
+
+
 header {
     text-align: center;
     padding: 40px 20px;
@@ -21,8 +23,7 @@ header {
 h1 {
     font-size: 36px;
     margin: 0;
-    color: #ab8714;
-    font-family: 'Times New Roman', serif;
+    color: #947613;
 }
 
 .tagline {
@@ -30,15 +31,40 @@ h1 {
     margin: 10px 0 0 0;
     font-style: italic;
     color: #efd494;
+    text-align: center;
 }
 
-.owner {
-    font-size: 16px;
-    margin: 5px 0 0 0;
-    font-style: italic;
-    color: #e4c782;
+nav {
+    margin: 25px auto 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #947613;
+    width: 70%;
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #F5F2EA;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-style: normal;
+}
+
+nav a:hover {
+    color: #EFD494;
+}
  
 h2 {
     font-size: 28px;
@@ -91,3 +117,121 @@ h3{
     object-fit: contain;
     margin: 15px auto 0;
 }
+
+.owner {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #F5F2EA;
+    color: #4f4b3e;
+    border: 2px solid #C9A227;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.owner h2 {
+    font-family: Arial, sans-serif;
+    color: #ceb359;
+    margin-top: 0;
+}
+
+.owner p {
+    color: #4f4b3e;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.history {
+    width: 75%;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #F5F2EA;
+    color: #4f4b3e;
+    border: 2px solid #C9A227;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.history h2 {
+    color:  #ceb359;
+    text-align: center;
+    margin-top: 0;
+}
+
+.history p {
+    color: #4f4b3e;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #F5F2EA;
+    color: #4f4b3e;
+    border: 2px solid #C9A227;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact h2 {
+    color:  #ceb359;
+    text-align: center;
+    margin-top: 0;
+}
+
+.contact p {
+    color: #4f4b3e;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+}
+
+.contact a {
+    color: #4f4b3e;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
