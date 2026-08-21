@@ -8,8 +8,6 @@ body {
     text-align: justify; 
 }
 
-
-
 header {
     text-align: center;
     padding: 40px 20px;
@@ -57,7 +55,6 @@ nav li {
 nav a {
     color: #F5F2EA;
     text-decoration: none;
-    font-family: Georgia, "Times New Roman", serif;
     font-size: 17px;
     font-style: normal;
 }
