@@ -5,7 +5,7 @@ body {
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.5;
     font-size: 18px;
-    text-align: justify; 
+    text-align: center; 
 }
 
 header {
@@ -79,6 +79,8 @@ h2 {
 }
 
 .book {
+    width: 60%;
+    margin: 30px auto;
     background-color: #F5F2EA;
     color: #050404;
     padding: 15px;
@@ -107,6 +109,24 @@ h3{
     font-size: 14px;
     font-style: italic;
 }
+
+.book-info { 
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #F5F2EA;
+    color: #4f4b3e;
+    border: 2px solid #C9A227;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+ .synopsis {
+    color: #5F5A50;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+ }
 
 .book img {
     width: 150px;
@@ -196,6 +216,21 @@ h3{
     color: #4f4b3e;
     text-decoration: none;
 }
+
+table {
+    margin: 30px auto;
+    background-color: #F5F2EA;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, 
+tr {
+    padding: 12px 25px;
+    border: 2px solid #b59018;
+    color:#4f4b3e;
+}
+
 
 
 
