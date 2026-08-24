@@ -225,11 +225,12 @@ table {
 }
 
 th, 
-tr {
-    padding: 12px 25px;
+tr{
+    padding: 15px 35px;
     border: 2px solid #b59018;
     color:#4f4b3e;
 }
+
 
 
 
