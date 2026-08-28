@@ -36,11 +36,21 @@
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email</label>
-        <input type="email" id="email" email="email" required>
-        
+        <input type="email" id="email" name="email" required>
+        <hr>
+        <label for="subject">What brings you here my friend?</label>
+        <select id="subject" name="subject"></select>
+           <option value="">Choose a subject</option>
+           <option value="finding-a-book">Finding a Book</option>
+           <option value="order-status">An Order's Journey</option>
+           <option value="book-recommendation">Seeking a Recommendation</option>
+           <option value="other-concerns">Something Else, Wanderer</option> 
+        </select>
+        <hr>
+       <label for="message">Tell the keeper what is on your mind.</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        <button type="submit">Send message</button>
   </fieldset>
-
-
 </main>
 
 <footer>
