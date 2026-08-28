@@ -217,6 +217,18 @@ h3{
     text-decoration: none;
 }
 
+.form {
+    width: 90px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #F5F2EA;
+    color: #4f4b3e;
+    border: 2px solid #C9A227;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 table {
     margin: 30px auto;
     background-color: #F5F2EA;
