@@ -227,6 +227,12 @@ h3{
     border-radius: 8px;
 }
 
+.details{
+    color:  #dab745;
+    text-align: center;
+    margin-top: 0;
+}
+
 table {
     margin: 30px auto;
     background-color: #F5F2EA;
