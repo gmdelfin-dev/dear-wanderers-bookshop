@@ -218,15 +218,13 @@ h3{
 }
 
 .form {
-    width: 90px;
-    margin: 50px auto;
+    width: 60px;
+    margin: 30px auto;
     padding: 25px;
     background-color: #F5F2EA;
     color: #4f4b3e;
     border: 2px solid #C9A227;
     border-radius: 8px;
-    box-sizing: border-box;
-    text-align: center;
 }
 
 table {
