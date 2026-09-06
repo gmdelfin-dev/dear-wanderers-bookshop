@@ -1,19 +1,47 @@
+
+
+:root {
+    --brand-color: #C9A227;
+    --dark-ink: #353431;
+    --muted-grey: #5F5A50;
+    --light-background: #F5F2EA;
+
+    --brand-dark: #947613;
+    --heading-gold: #ceb359;
+    --accent-gold: #efd494;
+    --dark-text: #4f4b3e;
+    --heading-dark: #6B5315;
+    --price-color: #9A7614;
+    --black-ink: #050404;
+    --details-gold: #bcb011;
+}
+
+
+/* my base styles */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    background-color: #353431;
-    color: #F5F2EA;
+    background-color: var(--dark-ink);
+    color: var(--light-background);
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.5;
     font-size: 18px;
-    text-align: center; 
+    text-align: center;
 }
+
+
+/* my shop's layout */
 
 header {
     text-align: center;
     padding: 40px 20px;
 }
 
-.LOGO{
+.LOGO {
     width: 170px;
     height: auto;
 }
@@ -21,52 +49,65 @@ header {
 h1 {
     font-size: 36px;
     margin: 0;
-    color: #947613;
+    color: var(--brand-dark);
 }
 
 .tagline {
     font-size: 20px;
     margin: 10px 0 0 0;
     font-style: italic;
-    color: #efd494;
+    color: var(--accent-gold);
     text-align: center;
 }
 
 nav {
     margin: 25px auto 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid #947613;
+    border-bottom: 1px solid var(--brand-color);
     width: 70%;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 35px;
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav a {
-    color: #F5F2EA;
+    color: var(--light-background);
     text-decoration: none;
     font-size: 17px;
     font-style: normal;
 }
 
 nav a:hover {
-    color: #EFD494;
+    color: var(--accent-gold);
 }
- 
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid var(--brand-color);
+    font-size: 14px;
+}
+
+
+/*  my shop's components */
+
 h2 {
     font-size: 28px;
     margin: 20px 0 10px 0;
-    color: #ceb359;
+    color: var(--heading-gold);
 }
 
 .book-container {
@@ -79,54 +120,36 @@ h2 {
 }
 
 .book {
-    width: 60%;
+    width: 100%;
     margin: 30px auto;
-    background-color: #F5F2EA;
-    color: #050404;
+    background-color: var(--light-background);
+    color: var(--black-ink);
     padding: 15px;
-    border: 2px solid #C9A227;
+    border: 2px solid var(--brand-color);
     border-radius: 8px;
     text-align: center;
 }
 
-h3{
-    color: #6B5315;
+h3 {
+    color: var(--heading-dark);
     font-family: Georgia, serif;
     font-size: 20px;
     font-style: italic;
 }
 
 .price {
-    color: #9A7614;
+    color: var(--price-color);
     font-weight: bold;
     font-size: 18px;
     font-style: italic;
 }
 
 .description {
-    color: #5F5A50;
+    color: var(--muted-grey);
     font-family: Arial, sans-serif;
     font-size: 14px;
     font-style: italic;
 }
-
-.book-info { 
-    width: 60%;
-    margin: 30px auto;
-    padding: 25px;
-    background-color: #F5F2EA;
-    color: #4f4b3e;
-    border: 2px solid #C9A227;
-    border-radius: 8px;
-    box-sizing: border-box;
-    text-align: center;
-}
- .synopsis {
-    color: #5F5A50;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-style: italic;
- }
 
 .book img {
     width: 150px;
@@ -135,26 +158,43 @@ h3{
     margin: 15px auto 0;
 }
 
+.book-info {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    border: 2px solid var(--brand-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.synopsis {
+    color: var(--muted-grey);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
 .owner {
     width: 60%;
     margin: 30px auto;
     padding: 25px;
-    background-color: #F5F2EA;
-    color: #4f4b3e;
-    border: 2px solid #C9A227;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    border: 2px solid var(--brand-color);
     border-radius: 8px;
-    box-sizing: border-box;
     text-align: center;
 }
 
 .owner h2 {
     font-family: Arial, sans-serif;
-    color: #ceb359;
+    color: var(--heading-gold);
     margin-top: 0;
 }
 
 .owner p {
-    color: #4f4b3e;
+    color: var(--dark-text);
     font-size: 16px;
     font-style: italic;
 }
@@ -163,21 +203,20 @@ h3{
     width: 75%;
     margin: 40px auto;
     padding: 35px;
-    background-color: #F5F2EA;
-    color: #4f4b3e;
-    border: 2px solid #C9A227;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    border: 2px solid var(--brand-color);
     border-radius: 8px;
-    box-sizing: border-box;
 }
 
 .history h2 {
-    color:  #ceb359;
+    color: var(--heading-gold);
     text-align: center;
     margin-top: 0;
 }
 
 .history p {
-    color: #4f4b3e;
+    color: var(--dark-text);
     font-size: 16px;
     line-height: 1.5;
 }
@@ -186,84 +225,63 @@ h3{
     width: 60%;
     margin: 30px auto;
     padding: 25px;
-    background-color: #F5F2EA;
-    color: #4f4b3e;
-    border: 2px solid #C9A227;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    border: 2px solid var(--brand-color);
     border-radius: 8px;
-    box-sizing: border-box;
     text-align: center;
 }
 
 .contact h2 {
-    color:  #ceb359;
+    color: var(--heading-gold);
     text-align: center;
     margin-top: 0;
 }
 
 .contact p {
-    color: #4f4b3e;
+    color: var(--dark-text);
     font-size: 16px;
     line-height: 1.5;
 }
 
 .contact ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     line-height: 2;
 }
 
 .contact a {
-    color: #4f4b3e;
+    color: var(--dark-text);
     text-decoration: none;
 }
 
 .form {
-    width: 60px;
+    width: 65%;
     margin: 30px auto;
     padding: 25px;
-    background-color: #F5F2EA;
-    color: #4f4b3e;
-    border: 2px solid #C9A227;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    border: 2px solid var(--brand-color);
     border-radius: 8px;
 }
 
-.details{
-    color:  #dab745;
+.details {
+    color: var(--details-gold);
     text-align: center;
     margin-top: 0;
 }
 
 table {
     margin: 30px auto;
-    background-color: #F5F2EA;
+    background-color: var(--light-background);
+    border-radius: 10px;
     border-collapse: collapse;
     text-align: center;
 }
 
-th, 
-tr{
+th,
+td {
     padding: 15px 35px;
-    border: 2px solid #b59018;
-    color:#4f4b3e;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    border: 2px solid var(--brand-color);
+    color: var(--dark-text);
 
