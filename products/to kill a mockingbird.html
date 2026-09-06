@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To Kill a Mockingbird - book9</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<header class="header" id="header">
+   <img src="../LOGO.jpg" alt="LOGO" class="LOGO" id="LOGO">
+   <h1>Dear Wanderers Bookshop</h1>
+   <p class = "tagline">
+      "Come in. Stay for awhile, and let's wander far."</p>
+<nav>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+ <div class="book-info">
+    <article>
+         <h2> Book information: </h2>
+         <hr>
+         <p>Title: To Kill a Mockingbird</p>
+         <p>Author: Harper Lee</p>
+         <p> Genre: Fiction, Classic Literature</p>
+         <p>Published: 1960</p> 
+    </article>
+ </div>
+
+    <article class = "book-card" id="book-card">
+         <h1>"To Kill a Mockingbird"</h1> 
+         <h1 class="price">₱180.00</h1>
+         <p class="synopsis">To Kill a Mockingbird is a gripping tale of racial injustice and childhood innocence in the American South. 
+        Through the eyes of young Scout Finch, the novel explores themes of morality, empathy, and the loss of innocence as she witnesses
+        the harsh realities of her community.</p> 
+         <img src="../To Kill A Mockingbird.jpg" alt="To Kill a Mockingbird"> 
+    </article>
+
+
+    <table class="table">
+       <tr class="tr">  
+           <th class="th">Product</th>
+           <th>Price</th>
+           <th>In stock</th>
+        </tr>
+
+        <tr>
+           <td class="td">To Kill a Mockingbird</td>
+           <td>₱180.00</td>
+           <td>Yes</td>
+        </tr>
+    </table>
+
+    <fieldset> 
+        <legend>Your order enquiry</legend>
+        <label for="quantity">Quantity</label> 
+        <input type="number" id="quantity" name="quantity" min="1" max="20"> 
+   <hr>
+        <legend>How shall your book find its way to you?</legend>
+        <label for="standard"> 
+         <input type="radio" id="standard" name="delivery" value="standard"> Standard Delivery </label> 
+         <label for="pickup"> 
+         <input type="radio" id="pickup" name="delivery" value="pickup"> Local Pickup </label>
+   <hr>
+        <legend>Would you like anything to accompany your book?</legend> 
+        <label for="gift-wrap"> 
+        <input type="checkbox" id="gift-wrap" name="extras" value="gift-wrap"> Gift Wrapping </label> 
+        <label for="bookmark"> 
+        <input type="checkbox" id="bookmark" name="extras" value="bookmark"> A Little Bookmark </label> 
+        <label for="express-handling"> 
+    <hr>
+    <label for="email">Where may the keeper reach you?</label> 
+    <input type="email" id="email" name="email" required placeholder="Enter your email address"> 
+    <button type="submit">Send enquiry</button> 
+    </fieldset>
+</main>
+<footer>
+    <p> &copy; 2026 Dear Wanderers Bookshop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
