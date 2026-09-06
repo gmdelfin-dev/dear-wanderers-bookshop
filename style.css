@@ -33,7 +33,6 @@ body {
     text-align: center;
 }
 
-
 /* my shop's layout regions */
 
 header {
@@ -110,6 +109,8 @@ h2 {
     color: var(--heading-gold);
 }
 
+/* my book cards */
+
 .book-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -122,14 +123,14 @@ h2 {
 .book-card {
     width: 60%;
     margin: 30px auto;
+    margin-bottom: 25px;
     background-color: var(--light-background);
     color: var(--black-ink);
-    padding: 15px;
-    border: 2px solid var(--brand-color);
+    padding: 16px;
+    border: 5px solid var(--brand-color);
     border-radius: 8px;
     text-align: center;
 }
-
 
 h3 {
     color: var(--heading-dark);
@@ -159,6 +160,8 @@ h3 {
     margin: 15px auto 0;
 }
 
+/* my book details page */
+
 .book-info {
     width: 60%;
     margin: 30px auto;
@@ -177,17 +180,7 @@ h3 {
     font-style: italic;
 }
     
-.book a {
-    margin: 25px auto 0;
-    padding-bottom: 15px;
-    border-bottom: 1px solid var(--brand-color);
-    width: 70%;
-}
-
-.book a:hover {
-    color: var(--accent-gold);
-}
-
+/* my about page */
 .owner {
     width: 60%;
     margin: 30px auto;
@@ -233,6 +226,8 @@ h3 {
     line-height: 1.5;
 }
 
+/* my contact page */
+
 .contact {
     width: 60%;
     margin: 30px auto;
@@ -277,11 +272,6 @@ h3 {
     border-radius: 8px;
 }
 
-.details {
-    color: var(--details-gold);
-    text-align: center;
-    margin-top: 0;
-}
 
 table {
     margin: 30px auto;
