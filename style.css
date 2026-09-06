@@ -6,14 +6,14 @@
     --muted-grey: #5F5A50;
     --light-background: #F5F2EA;
 
-    --brand-dark: #947613;
-    --heading-gold: #ceb359;
-    --accent-gold: #efd494;
-    --dark-text: #4f4b3e;
-    --heading-dark: #6B5315;
-    --price-color: #9A7614;
-    --black-ink: #050404;
-    --details-gold: #bcb011;
+    --title-color: #947613; 
+    --heading-color: #ceb359; 
+    --tagline-color: #efd494; 
+    --paragraph-color: #4f4b3e; 
+    --subheading-color: #6B5315; 
+    --price-color: #9A7614; 
+    --card-text-color: #050404; 
+    --form-title-color: #c0a432;
 }
 
 
@@ -48,21 +48,21 @@ header {
 h1 {
     font-size: 36px;
     margin: 0;
-    color: var(--brand-dark);
+    color: var(--title-color);
 }
 
 .tagline {
     font-size: 20px;
     margin: 10px 0 0 0;
     font-style: italic;
-    color: var(--accent-gold);
+    color: var(--tagline-color);
     text-align: center;
 }
 
 nav {
     margin: 25px auto 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid var(--brand-color);
+    border-bottom: 2px solid var(--brand-color);
     width: 70%;
 }
 
@@ -85,7 +85,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent-gold);
+    color: var(--tagline-color);
 }
 
 main {
@@ -96,17 +96,16 @@ main {
 footer {
     margin-top: 40px;
     padding: 20px;
-    border-top: 1px solid var(--brand-color);
+    border-top: 1px solid var(--light-background);
     font-size: 14px;
 }
-
 
 /*  my shop's components */
 
 h2 {
     font-size: 28px;
     margin: 20px 0 10px 0;
-    color: var(--heading-gold);
+    color: var(--heading-color);
 }
 
 /* my book cards */
@@ -125,15 +124,15 @@ h2 {
     margin: 30px auto;
     margin-bottom: 25px;
     background-color: var(--light-background);
-    color: var(--black-ink);
-    padding: 16px;
-    border: 5px solid var(--brand-color);
+    color: var(--card-text-color);
+    padding: 25px;
+    border: 2px solid var(--brand-color);
     border-radius: 8px;
     text-align: center;
 }
 
 h3 {
-    color: var(--heading-dark);
+    color: var(--subheading-color);
     font-family: Georgia, serif;
     font-size: 20px;
     font-style: italic;
@@ -165,9 +164,9 @@ h3 {
 .book-info {
     width: 60%;
     margin: 30px auto;
-    padding: 25px;
+    padding: 16px;
     background-color: var(--light-background);
-    color: var(--dark-text);
+    color: var(--paragraph-color);
     border: 2px solid var(--brand-color);
     border-radius: 8px;
     text-align: center;
@@ -180,13 +179,30 @@ h3 {
     font-style: italic;
 }
     
+/* my detail's table */
+table {
+    margin: 30px auto;
+    background-color: var(--light-background);
+    border-radius: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 16px 35px;
+    border: 2px solid var(--brand-color);
+    color: var(--paragraph-color);
+}
+
+
 /* my about page */
 .owner {
     width: 60%;
     margin: 30px auto;
     padding: 25px;
     background-color: var(--light-background);
-    color: var(--dark-text);
+    color: var(--paragraph-color);
     border: 2px solid var(--brand-color);
     border-radius: 8px;
     text-align: center;
@@ -194,12 +210,12 @@ h3 {
 
 .owner h2 {
     font-family: Arial, sans-serif;
-    color: var(--heading-gold);
+    color: var(--heading-color);
     margin-top: 0;
 }
 
 .owner p {
-    color: var(--dark-text);
+    color: var(--paragraph-color);
     font-size: 16px;
     font-style: italic;
 }
@@ -209,19 +225,19 @@ h3 {
     margin: 40px auto;
     padding: 35px;
     background-color: var(--light-background);
-    color: var(--dark-text);
+    color: var(--paragraph-color);
     border: 2px solid var(--brand-color);
     border-radius: 8px;
 }
 
 .history h2 {
-    color: var(--heading-gold);
+    color: var(--heading-color);
     text-align: center;
     margin-top: 0;
 }
 
 .history p {
-    color: var(--dark-text);
+    color: var(--paragraph-color);
     font-size: 16px;
     line-height: 1.5;
 }
@@ -233,20 +249,20 @@ h3 {
     margin: 30px auto;
     padding: 25px;
     background-color: var(--light-background);
-    color: var(--dark-text);
+    color: var(--paragraph-color);
     border: 2px solid var(--brand-color);
     border-radius: 8px;
     text-align: center;
 }
 
 .contact h2 {
-    color: var(--heading-gold);
+    color: var(--heading-color);
     text-align: center;
     margin-top: 0;
 }
 
 .contact p {
-    color: var(--dark-text);
+    color: var(--paragraph-color);
     font-size: 16px;
     line-height: 1.5;
 }
@@ -258,32 +274,94 @@ h3 {
 }
 
 .contact a {
-    color: var(--dark-text);
+    color: var(--paragraph-color);
     text-decoration: none;
 }
 
+/* wanderers information form*/
+
 .form {
-    width: 55%;
+    width: 60%;
     margin: 30px auto;
     padding: 25px;
     background-color: var(--light-background);
-    color: var(--dark-text);
+    color: var(--dark-ink);
     border: 2px solid var(--brand-color);
     border-radius: 8px;
-}
-
-
-table {
-    margin: 30px auto;
-    background-color: var(--light-background);
-    border-radius: 10px;
-    border-collapse: collapse;
     text-align: center;
 }
 
-th,
-td {
-    padding: 15px 35px;
+.form legend {
+    margin-top: 0;
+    color: var(--form-title-color);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form input,
+.form textarea,
+.form select {
+    width: 60%;
+    padding: 10px;
+    margin: 8px 0;
+    margin-bottom: 15px;
+    border: 1px solid var(--brand-color);
+    border-radius: 2px;
+}
+
+.form button {
+    background-color: var(--brand-color);
+    color: var(--dark-ink);
+    padding: 12px 20px; 
+    border: none;
+    cursor: pointer;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: 3px solid var(--dark-ink);
+    outline-offset: 2px;
+}
+
+/* wanderers order-enquiry form*/
+
+.order-enquiry {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--light-background);
+    color: var(--dark-ink);
     border: 2px solid var(--brand-color);
-    color: var(--dark-text);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.order-enquiry legend { 
+    color: var(--form-title-color); 
+    font-weight: bold; 
+} 
+.order-enquiry input, 
+.order-enquiry textarea, 
+.order-enquiry select { 
+    padding: 10px;
+    margin: 8px 0; 
+    margin-bottom: 15px;
+    border: 1px solid var(--brand-color);
+    border-radius: 2px;
+    font-size: 16px; 
+} 
+
+.order-enquiry button { 
+    background-color: var(--brand-color); 
+    color: var(--dark-ink); 
+    padding: 12px 20px; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.order-enquiry input:focus,
+.order-enquiry textarea:focus {
+    outline: 3px solid var(--dark-ink);
+    outline-offset: 2px;
 }
