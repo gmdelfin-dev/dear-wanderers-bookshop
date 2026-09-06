@@ -1,5 +1,5 @@
 
-
+/* my color palette (variables) */
 :root {
     --brand-color: #C9A227;
     --dark-ink: #353431;
@@ -34,7 +34,7 @@ body {
 }
 
 
-/* my shop's layout */
+/* my shop's layout regions */
 
 header {
     text-align: center;
@@ -119,8 +119,8 @@ h2 {
     align-items: stretch;
 }
 
-.book {
-    width: 100%;
+.book-card {
+    width: 60%;
     margin: 30px auto;
     background-color: var(--light-background);
     color: var(--black-ink);
@@ -151,7 +151,7 @@ h3 {
     font-style: italic;
 }
 
-.book img {
+.book-card img {
     width: 150px;
     height: 220px;
     object-fit: contain;
@@ -256,7 +256,7 @@ h3 {
 }
 
 .form {
-    width: 65%;
+    width: 55%;
     margin: 30px auto;
     padding: 25px;
     background-color: var(--light-background);
@@ -284,4 +284,4 @@ td {
     padding: 15px 35px;
     border: 2px solid var(--brand-color);
     color: var(--dark-text);
-
+}
