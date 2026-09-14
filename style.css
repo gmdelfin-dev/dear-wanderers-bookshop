@@ -128,19 +128,17 @@ h2 {
 /* my book cards container */
 
 .book-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     width: 85%;
     margin: 0 auto;
-    align-items: stretch;
 }
 
 /* my book cards */
 .book-card {
-    width: 60%;
-    margin: 30px auto;
-    margin-bottom: 25px;
+    flex: 1 1 240px;
+    margin: 0;
     background-color: var(--light-background);
     color: var(--card-text-color);
     padding: 25px;
