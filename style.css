@@ -36,9 +36,20 @@ body {
 /* my shop's layout regions */
 
 header {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 40px 20px;
+    border-bottom: 2px solid var(--brand-color);
+    margin-bottom: 40px;
 }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 
 .LOGO {
     width: 170px;
@@ -46,13 +57,13 @@ header {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 45px;
     margin: 0;
     color: var(--title-color);
 }
 
 .tagline {
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px 0 0 0;
     font-style: italic;
     color: var(--tagline-color);
@@ -60,21 +71,19 @@ h1 {
 }
 
 nav {
-    margin: 25px auto 0;
-    padding-bottom: 15px;
-    border-bottom: 2px solid var(--brand-color);
-    width: 70%;
+    padding-bottom: 35px;
 }
 
 nav ul {
+    display: flex;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav a {
@@ -102,13 +111,21 @@ footer {
 
 /*  my shop's components */
 
+.product {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 h2 {
     font-size: 28px;
     margin: 20px 0 10px 0;
     color: var(--heading-color);
 }
 
-/* my book cards */
+/* my book cards container */
 
 .book-container {
     display: grid;
@@ -119,6 +136,7 @@ h2 {
     align-items: stretch;
 }
 
+/* my book cards */
 .book-card {
     width: 60%;
     margin: 30px auto;
